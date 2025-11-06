@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CareerLens - ATS Simulator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center">CareerLens - ATS Simulator & Skill Gap Analysis</h1>
+      <p class="text-center text-muted">Upload your resume and paste a job description to see how you match.</p>
+      
+      <form action="/analyze" method="post" enctype="multipart/form-data" class="mt-4">
+        <div class="form-group">
+          <label for="resume">Upload Resume (.pdf, .docx)</label>
+          <input type="file" class="form-control-file" id="resume" name="resume" required>
+        </div>
+        <div class="form-group">
+          <label for="job_description">Paste Job Description</label>
+          <textarea class="form-control" id="job_description" name="job_description" rows="10" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Analyze</button>
+      </form>
+    </div>
+  </body>
+</html>
